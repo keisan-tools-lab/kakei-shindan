@@ -4,6 +4,10 @@
 
 export const SITE = {
   name: "まるっと家計診断",
+  // 公開しているアドレス（サイトマップなどで使います。最後に / はつけません）
+  url: "https://keisan-tools-lab.github.io/kakei-shindan",
+  // Google サーチコンソールの所有権の確認（HTMLタグの content の値）
+  googleVerification: "hgQtQbagWYO1CZbOsEXOiBtvng-TmpAs5_-IVNGuipk",
   description:
     "家計のムダ削減から、ポイ活、ふるさと納税、新NISA・iDeCoの資産運用までを、5つのステップで診断・シミュレーションできる無料ツールです。",
   // Google AdSense のサイト運営者ID（くらし計算帖と同じアカウント）

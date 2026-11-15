@@ -34,6 +34,7 @@ export const metadata: Metadata = {
   ...(origin ? { metadataBase: new URL(`${origin}${base}/`) } : {}),
   openGraph: { title: SITE.name, description: SITE.description, type: "website", locale: "ja_JP" },
   twitter: { card: "summary" },
+  verification: { google: SITE.googleVerification },
   other: { "google-adsense-account": SITE.adsenseClient },
 };
 
