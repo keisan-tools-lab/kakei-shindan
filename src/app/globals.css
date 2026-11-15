@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/* =============================================
+   サイト全体の色と文字（ダークテーマ）
+   夜のような深いネイビーをベースに、
+   エメラルドグリーン（お金が増える）をアクセントに使います。
+   色を変えたいときは、ここの値だけを変えれば全体に反映されます。
+   ============================================= */
+@theme {
+  --color-bg: #0a1020;          /* ページの背景 */
+  --color-surface: #111a2e;     /* カードの背景 */
+  --color-surface-2: #17223b;   /* カードの中の、少し明るい面 */
+  --color-line: #233150;        /* 線・スライダーの溝 */
+  --color-line-strong: #34466d; /* 強めの線 */
+  --color-ink: #eef3fb;         /* 文字 */
+  --color-ink-2: #b8c5dc;       /* 補足の文字 */
+  --color-muted: #8494b2;       /* 注意書きの文字 */
+  --color-accent: #34d399;      /* アクセントの文字（エメラルド） */
+  --color-accent-soft: rgb(16 185 129 / 0.12); /* アクセントのうすい背景 */
+  --color-bar: #6b8cc7;         /* 棒グラフ */
+  --color-navy-btn: #2a4373;    /* 「次へ」などのボタン */
+  --color-navy-btn-hover: #34528a;
+
+  /* 英字・数字はスタイリッシュな Outfit、日本語は Zen Kaku Gothic New */
+  --font-sans: var(--font-latin), var(--font-jp), "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgb(16 185 129 / 0.10), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgb(56 100 190 / 0.14), transparent 60%),
+    var(--color-bg);
+  background-attachment: fixed;
+  color: var(--color-ink);
+  font-feature-settings: "palt";
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3 {
+  letter-spacing: 0.02em;
+}
+
+/* 数字の幅をそろえる（Outfit の数字で表示） */
+.num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* 入力欄の文字色（ダークテーマ用） */
+input, select, textarea {
+  color: var(--color-ink);
+}
+
+/* スライダーの見た目 */
+input[type="range"] {
+  appearance: none;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--color-line);
+  accent-color: var(--color-emerald-500);
+}
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--color-emerald-400);
+  border: 3px solid var(--color-bg);
+  box-shadow: 0 0 0 2px rgb(52 211 153 / 0.35), 0 2px 8px rgb(0 0 0 / 0.5);
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--color-emerald-400);
+  border: 3px solid var(--color-bg);
+  box-shadow: 0 0 0 2px rgb(52 211 153 / 0.35), 0 2px 8px rgb(0 0 0 / 0.5);
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
