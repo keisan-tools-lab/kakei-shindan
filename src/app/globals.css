@@ -7,19 +7,19 @@
    色を変えたいときは、ここの値だけを変えれば全体に反映されます。
    ============================================= */
 @theme {
-  --color-bg: #0a1020;          /* ページの背景 */
-  --color-surface: #111a2e;     /* カードの背景 */
-  --color-surface-2: #17223b;   /* カードの中の、少し明るい面 */
-  --color-line: #233150;        /* 線・スライダーの溝 */
-  --color-line-strong: #34466d; /* 強めの線 */
-  --color-ink: #eef3fb;         /* 文字 */
-  --color-ink-2: #b8c5dc;       /* 補足の文字 */
-  --color-muted: #8494b2;       /* 注意書きの文字 */
-  --color-accent: #34d399;      /* アクセントの文字（エメラルド） */
-  --color-accent-soft: rgb(16 185 129 / 0.12); /* アクセントのうすい背景 */
-  --color-bar: #6b8cc7;         /* 棒グラフ */
-  --color-navy-btn: #2a4373;    /* 「次へ」などのボタン */
-  --color-navy-btn-hover: #34528a;
+  --color-bg: #172340;          /* ページの背景 */
+  --color-surface: #1f2e4f;     /* カードの背景 */
+  --color-surface-2: #283a60;   /* カードの中の、少し明るい面 */
+  --color-line: #33487a;        /* 線・スライダーの溝 */
+  --color-line-strong: #46609a; /* 強めの線 */
+  --color-ink: #f5f8fd;         /* 文字 */
+  --color-ink-2: #d0daec;       /* 補足の文字 */
+  --color-muted: #a5b4d2;       /* 注意書きの文字 */
+  --color-accent: #4ade9f;      /* アクセントの文字（エメラルド） */
+  --color-accent-soft: rgb(16 185 129 / 0.18); /* アクセントのうすい背景 */
+  --color-bar: #86a6e0;         /* 棒グラフ */
+  --color-navy-btn: #3a5a98;    /* 「次へ」などのボタン */
+  --color-navy-btn-hover: #4669b0;
 
   /* 英字・数字はスタイリッシュな Outfit、日本語は Zen Kaku Gothic New */
   --font-sans: var(--font-latin), var(--font-jp), "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
@@ -31,8 +31,8 @@
 
 body {
   background:
-    radial-gradient(1200px 600px at 85% -10%, rgb(16 185 129 / 0.10), transparent 60%),
-    radial-gradient(900px 500px at -10% 10%, rgb(56 100 190 / 0.14), transparent 60%),
+    radial-gradient(1200px 600px at 85% -10%, rgb(52 211 153 / 0.16), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgb(96 140 230 / 0.22), transparent 60%),
     var(--color-bg);
   background-attachment: fixed;
   color: var(--color-ink);

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   other: { "google-adsense-account": SITE.adsenseClient },
 };
 
-export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#0a1020" };
+export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#172340" };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (

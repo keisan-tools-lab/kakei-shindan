@@ -52,19 +52,19 @@ export function GrowthChart({ labels, principals, totals }: { labels: string[]; 
           maintainAspectRatio: false,
           interaction: { mode: "index", intersect: false },
           plugins: {
-            legend: { position: "bottom", labels: { boxWidth: 12, color: "#b8c5dc", font: { size: 12, family: "Outfit, sans-serif" } } },
+            legend: { position: "bottom", labels: { boxWidth: 12, color: "#d0daec", font: { size: 12, family: "Outfit, sans-serif" } } },
             tooltip: {
-              backgroundColor: "#17223b",
-              borderColor: "#34466d",
+              backgroundColor: "#283a60",
+              borderColor: "#46609a",
               borderWidth: 1,
-              titleColor: "#eef3fb",
-              bodyColor: "#b8c5dc",
+              titleColor: "#f5f8fd",
+              bodyColor: "#d0daec",
               callbacks: { label: (c) => `${c.dataset.label}：${man(Number(c.raw))}` },
             },
           },
           scales: {
-            x: { grid: { display: false }, ticks: { color: "#8494b2", maxTicksLimit: 8 } },
-            y: { grid: { color: "#233150" }, ticks: { color: "#8494b2", callback: (v) => man(Number(v)) } },
+            x: { grid: { display: false }, ticks: { color: "#a5b4d2", maxTicksLimit: 8 } },
+            y: { grid: { color: "#33487a" }, ticks: { color: "#a5b4d2", callback: (v) => man(Number(v)) } },
           },
         }}
       />
