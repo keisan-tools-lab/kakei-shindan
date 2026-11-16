@@ -74,6 +74,19 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </div>
         </footer>
 
+        {/* Google アナリティクス（GA4） */}
+        <Script
+          id="gtag-src"
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${SITE.gaId}`}
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${SITE.gaId}');`}
+        </Script>
+
         {/* Google AdSense（自動広告） */}
         <Script
           id="adsense"

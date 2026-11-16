@@ -21,6 +21,13 @@ export default function Privacy() {
         くわしくは <a className="text-accent underline" href="https://policies.google.com/technologies/ads?hl=ja" target="_blank" rel="noopener">Google の広告に関するポリシー</a> をご覧ください。
       </p>
 
+      <h2 className="mt-4 text-lg font-bold text-ink">アクセス解析について</h2>
+      <p>
+        当サイトは、Google によるアクセス解析ツール「Google アナリティクス」を利用しています。Google アナリティクスは Cookie を使用して、見たページや滞在時間、おおまかな地域や端末の種類などの利用状況のデータを集めます。このデータは匿名で集められ、個人を特定するものではありません。診断で入力した年収や支出などの内容が送られることはありません。
+        データの収集は、ブラウザの設定で Cookie を無効にするか、<a className="text-accent underline" href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener">Google アナリティクス オプトアウト アドオン</a> を使うことで拒否できます。
+        くわしくは <a className="text-accent underline" href="https://marketingplatform.google.com/about/analytics/terms/jp/" target="_blank" rel="noopener">Google アナリティクス利用規約</a> と <a className="text-accent underline" href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a> をご覧ください。
+      </p>
+
       <h2 className="mt-4 text-lg font-bold text-ink">アフィリエイトについて</h2>
       <p>当サイトは、アフィリエイトプログラム（成果報酬型の広告）に参加しています。「PR」と表示したリンクは広告で、そのリンクから申し込みがあった場合、当サイトが紹介料を受け取ることがあります。紹介する内容は、報酬の有無にかかわらず当サイトの基準で選んでいます。</p>
 

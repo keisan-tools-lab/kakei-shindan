@@ -8,6 +8,8 @@ export const SITE = {
   url: "https://keisan-tools-lab.github.io/kakei-shindan",
   // Google サーチコンソールの所有権の確認（HTMLタグの content の値）
   googleVerification: "hgQtQbagWYO1CZbOsEXOiBtvng-TmpAs5_-IVNGuipk",
+  // Google アナリティクス（GA4）の測定ID
+  gaId: "G-T5MLB6PJ4W",
   description:
     "家計のムダ削減から、ポイ活、ふるさと納税、新NISA・iDeCoの資産運用までを、5つのステップで診断・シミュレーションできる無料ツールです。",
   // Google AdSense のサイト運営者ID（くらし計算帖と同じアカウント）
